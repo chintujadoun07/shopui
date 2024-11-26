@@ -5,7 +5,7 @@ import { XMarkIcon } from '@heroicons/react/24/outline'
 // import CardItem from '../Component/CardItem'
 import { useSelector,useDispatch } from 'react-redux'
 
-import { removeFromCartAction ,addToCartAction }from '../Redux/Actions/cartItems'
+import { removeFromCartAction ,addToCartAction }from '../redux/actions/cartItems'
 
 
 
