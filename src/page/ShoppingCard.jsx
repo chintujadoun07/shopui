@@ -2,7 +2,8 @@ import {  useState } from 'react'
 
 import { Dialog, DialogBackdrop, DialogPanel, DialogTitle } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
- import CardItem from '../Component/CardItem'
+  import CardItem from '../component/CardItem'
+
 import { useSelector} from 'react-redux'
 
 
