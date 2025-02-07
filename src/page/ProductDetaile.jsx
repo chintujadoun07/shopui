@@ -9,6 +9,7 @@ const {id}=useParams()
 const dispatch=useDispatch()
 const singleproduct =useSelector((state)=>state.singleproduct)
 const { loading, error, product } = singleproduct;
+
 useEffect(()=>{
   if(id){
     dispatch(getSingleProduct(id))

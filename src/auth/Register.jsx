@@ -30,7 +30,7 @@ const Register = () => {
     console.log('userInfo:', userInfo);
     if (userInfo) {
 
-      navigate('/');
+      navigate('/login');
     }
   }, [userInfo, navigate]);
 

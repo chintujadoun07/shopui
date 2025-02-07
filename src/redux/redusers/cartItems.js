@@ -17,7 +17,7 @@ import {
         );
   
         return {
-          ...state,
+          ...state, 
           cartItems: existItem
             ? state.cartItems.map((cartItem) =>
                 cartItem.product === item.product ? item : cartItem

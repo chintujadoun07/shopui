@@ -1,13 +1,13 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import { removeFromCartAction ,addToCartAction }from '../redux/actions/cartItems'
-const CardItem = ({products}) => {
+const CardItem = ({cartItems}) => {
 const dispatch=useDispatch()
 const removefromCartHandler=(id)=>{
   dispatch( removeFromCartAction(id))
 }
-const addtoCartHandler=(id)=>{
-  dispatch(addToCartAction(id) )
+const addtoCartHandler=(id,qty)=>{
+  dispatch(addToCartAction(id,qty) )
 }
 
     
@@ -16,7 +16,7 @@ const addtoCartHandler=(id)=>{
           <div className="mt-8">
                     <div className="flow-root">
                       <ul role="list" className="-my-6 divide-y divide-gray-200">
-                        {products.map((product) => (
+                        {cartItems.map((product) => (
                           <li key={product.id} className="flex py-6">
                             <div className="h-24 w-24 shrink-0 overflow-hidden rounded-md border border-gray-200">
                               <img
